@@ -1,0 +1,15 @@
+/* Override PrimeReact Menubar styles */
+.p-menubar {
+    position: static !important; /* Make the Menubar static */
+    top: auto !important; /* Reset any fixed positioning */
+    width: 100%; /* Ensure it spans the full width */
+    z-index: 1000; /* Ensure it stays above other content */
+    background-color: white; /* Add a background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+}
+
+/* Optional: Add padding or margins to the Menubar */
+.p-menubar .p-menubar-start,
+.p-menubar .p-menubar-end {
+    padding: 0 1rem; /* Add padding to the start and end sections */
+}

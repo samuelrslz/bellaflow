@@ -1,0 +1,63 @@
+.menu-container {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black; /* Outer background color */
+    padding: 10px 20px;
+    border-radius: 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Change the inner Menubar background */
+.p-menubar {
+    background-color: #f8d7e3 !important; /* Light pink shade */
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Change menu items color */
+.p-menubar .p-menuitem-link {
+    color: #333 !important; /* Darker text for readability */
+}
+
+/* Change menu item hover effect */
+.p-menubar .p-menuitem-link:hover {
+    background-color: #eaa2c7 !important; /* Slightly darker pink */
+}
+
+/* Change dropdown menu background */
+.p-menu {
+    background-color: #f8d7e3 !important;
+}
+
+/* Change dropdown menu items */
+.p-menu .p-menuitem-link {
+    color: #333 !important;
+}
+
+/* Change hover effect for dropdown items */
+.p-menu .p-menuitem-link:hover {
+    background-color: #eaa2c7 !important;
+}
+
+/* Style for the search input */
+.menu-search {
+    width: 8rem;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+@media (min-width: 600px) {
+    .menu-search {
+        width: auto;
+    }
+}
+
+/* Prevent content from being hidden under navbar */
+body {
+    padding-top: 60px;
+}

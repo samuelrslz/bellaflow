@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="300" height="100" viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg" fill="none">
+    <!-- Flowing Hair Design -->
+    <path d="M20,80 C40,20 80,20 100,80" stroke="#D4A373" stroke-width="4" fill="none" stroke-linecap="round" />
+    <path d="M50,80 C70,30 110,30 130,80" stroke="#D4A373" stroke-width="3" fill="none" stroke-linecap="round" />
+    
+    <!-- Text BellaFlow -->
+    <text x="150" y="65" font-family="'Arial', sans-serif" font-size="36" fill="#333" font-weight="bold">BellaFlow</text>
+</svg>
