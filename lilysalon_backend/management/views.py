@@ -11,19 +11,19 @@ from .serializers import CustomerSerializer, ServiceSerializer, AppointmentSeria
 class CustomerViewSet(viewsets.ModelViewSet):
     queryset = Customer.objects.all()
     serializer_class = CustomerSerializer
-    permission_classes = [permissions.AllowAny]  # Allow any for now for testing
+    permission_classes = [permissions.AllowAny]  
 
 # Service ViewSet
 class ServiceViewSet(viewsets.ModelViewSet):
     queryset = Service.objects.all()
     serializer_class = ServiceSerializer
-    permission_classes = [permissions.AllowAny]   # Allow any for now for testing
+    permission_classes = [permissions.AllowAny]   
 
 # Appointment ViewSet
 class AppointmentViewSet(viewsets.ModelViewSet):
     queryset = Appointment.objects.all()
     serializer_class = AppointmentSerializer
-    permission_classes = [permissions.AllowAny]  # Allow any for now for testing
+    permission_classes = [permissions.AllowAny]
 
     @action(detail=False, methods=['get'], url_path='customer/(?P<customer_id>[^/.]+)')
     def get_appointments_by_customer(self, request, customer_id=None):
@@ -36,4 +36,4 @@ class AppointmentViewSet(viewsets.ModelViewSet):
 class AppointmentServiceViewSet(viewsets.ModelViewSet):
     queryset = AppointmentService.objects.all()
     serializer_class = AppointmentServiceSerializer
-    permission_classes = [permissions.AllowAny]   # Allow any for now for testing
+    permission_classes = [permissions.AllowAny]

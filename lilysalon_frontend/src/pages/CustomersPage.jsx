@@ -125,7 +125,7 @@ const CustomersPage = () => {
     // Fetch appointment history for a customer
     const fetchAppointmentHistory = async (customerId) => {
         try {
-            const response = await api.get(`appointments/customer/${customerId}/`); // Updated endpoint to fetch appointments for a specific customer
+            const response = await api.get(`appointments/customer/${customerId}/`); 
             setAppointmentHistory(response.data); // Update state with the fetched appointments
         } catch (error) {
             console.error("Error fetching appointment history:", error);
@@ -273,7 +273,7 @@ const CustomersPage = () => {
                                 <Button
                                     variant="info"
                                     onClick={() => handleShowHistory(customer)}
-                                    className="me-2" // Add spacing to match "Edit" button
+                                    className="me-2" 
                                 >
                                     History
                                 </Button>
